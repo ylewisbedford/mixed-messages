@@ -1,13 +1,13 @@
 const randWord1 = ['funny', 'silly', 'cute'];
 const randWord2 = ['banana', 'pineapple', 'pear'];
-const randWord3 = ['bum', 'fart','poo', 'wee' ] ;
+const randWord3 = ['bum', 'fart','poo', 'wee', 'bums', 'bottoms' ] ;
 
-function randIndex() {
-    return Math.floor(Math.random() * 2);
+function randIndex(array) {
+    return Math.floor(Math.random() * (array.length-1));
 }
-let randomWord1 = randWord1[randIndex()];
-let randomWord2 = randWord2[randIndex()];
-let randomWord3 = randWord3[randIndex()];
+let randomWord1 = randWord1[randIndex(randWord1)];
+let randomWord2 = randWord2[randIndex(randWord2)];
+let randomWord3 = randWord3[randIndex(randWord3)];
 
 
 function makeSentence() {
